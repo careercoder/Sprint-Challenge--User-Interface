@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    background: #000;
 }
 ol, ul {
 	list-style: none;
@@ -69,6 +70,8 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+    background: #fff;
+    padding: 5px 25px; /** add padding to make pretty */
 }
 
 .top-content {
@@ -104,13 +107,176 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/** header */
+div, header, nav{
+    border: solid 0px #000;
+}
+
+
+header{
+    display:flex;
+    margin-top: 15px;
+}
+
+.branding{
+    width: 25%;
+}
+
+
+header nav#main{
+    padding-top: 15px; /** better alignment **/
+    display: flex;
+    flex-flow: row nowrap;
+    width: 75%;
+    align-content: flex-end;
+}
+
+nav#main ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+nav#main ul a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.splash .img-holder{
+    padding: 20px 0;
+}
+.splash .img-holder img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/** reason box holders **/
+/**********************************************************************************************************************************
+********************************************************************************************************************************/
+/** section::reason **/
+section#reasons{
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-shrink: 1;
+}
+
+section#reasons .reason{
+
+}
+
+#about, #worktogether{
+    padding: 0 15px 15px 15px;
+    border-bottom: #000 dashed 2px;
+    margin-bottom: 15px;
+}
+#worktogether{
+    border: none; /* remove the border */
+}
+
+section#reasons div.reason{
+  padding: 20px;
+  margin-bottom: 40px; /** this adds padding on the bottom **/
+}
+
+/** broadcast inner div position controls **/
+section#reasons > div.reason{
+  display: flex;
+  /** this makes the space between the colum row |[ ] -space- [ ]| adusting this allows you to add more in one row **/
+  flex-basis: calc(30%); 
+  justify-content: center;
+  flex-direction: column; /** change to row see what happens **/
+}
+/*** end section ***/
+/** section::details **/
+section#details{
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+section#details div.detail{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: dashed 1px #000;
+}
+
+/** broadcast inner div position controls **/
+section#details > div.detail{
+  display: flex;
+  flex-basis: 42%; /** this makes the space between the colum row |[ ] -space- [ ]| **/
+  justify-content: center;
+  flex-direction: column; /** change to row see what happens **/
+}
+
+/*** end section ***/
+.detail h3{
+    font-weight: bold;
+    padding-top: 15px;
+}
+.detail p{
+    padding: 10px 0;
+}
+
+.detail button{
+    width: 150px;
+    background: #fff;
+    border: solid 2px #333;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size:1em;
+}
+
+
+/** Boxes **/
+/** BACKGROUND COLORS **/
+.bg-teal{
+    background: teal;
+}
+.bg-gold{
+    background: gold;
+}
+.bg-cadetblue{
+    background: cadetblue;
+}
+.bg-coral{
+    background: coral;
+}
+.bg-crimson{
+    background: crimson;
+}
+.bg-forestgreen{
+    background: forestgreen;
+}
+.bg-darkorchid{
+    background: darkorchid;
+}
+.bg-hotpink{
+    background: hotpink;
+}
+.bg-indigo{
+    background: indigo;
+}
+.bg-dodgerblue{
+    background: dodgerblue;
+}
+
 
 .bottom-content {
     display: flex;

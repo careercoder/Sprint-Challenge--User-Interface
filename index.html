@@ -14,6 +14,82 @@
 <body>
     <div class="container">
    
+    <style type="text/css">
+        
+        div, header, nav{
+            border: solid 0px #000;
+        }
+
+
+        header{
+            display:flex;
+        }
+
+        .branding{
+            width: 25%;
+        }
+        
+
+        header nav#main{
+            display: flex;
+            flex-flow: row nowrap;
+            width: 75%;
+            align-content: flex-end;
+        }
+
+        nav#main ul{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            overflow: hidden;
+            justify-content: space-between;
+            width: 100%;
+
+        }
+
+        nav#main ul a{
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .splash .img-holder{
+            padding: 20px 0;
+        }
+        .splash .img-holder img{
+            width: 100%;
+            margin: 0 auto;
+        }
+
+    </style>
+
+
+        <!-- // header -->
+        <header id="header">
+
+            <div class="branding">
+                <a href="index.html"><img src="img/lambda-black.png" alt="Lamba"></a>
+            </div>
+            <nav id="main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+
+        </header>
+        <!-- // end header -->
+        <!-- // splash section // -->
+        <section class="splash">
+            <div class="img-holder">
+                <img src="img/jumbo.jpg">
+            </div>
+        </section>
+
         <section class="top-content">
             <div class="text-container">
                 <h2>The Future</h2>
@@ -30,16 +106,16 @@
             <h2>Why Did It Have To Be Boxes...</h2>
             
             <div class="boxes">
-                <div class="box">Box 1</div>
-                <div class="box">Box 2</div>
-                <div class="box">Box 3</div>
-                <div class="box">Box 4</div>
-                <div class="box">Box 5</div>
-                <div class="box">Box 6</div>
-                <div class="box">Box 7</div>
-                <div class="box">Box 8</div>
-                <div class="box">Box 9</div>
-                <div class="box">Box 10</div>
+                <div class="box bg-teal">Box 1</div>
+                <div class="box bg-gold">Box 2</div>
+                <div class="box bg-cadetblue">Box 3</div>
+                <div class="box bg-coral">Box 4</div>
+                <div class="box bg-crimson">Box 5</div>
+                <div class="box bg-forestgreen">Box 6</div>
+                <div class="box bg-darkorchid">Box 7</div>
+                <div class="box bg-hotpink">Box 8</div>
+                <div class="box bg-indigo">Box 9</div>
+                <div class="box bg-dodgerblue">Box 10</div>
             </div>
         
         </section>
