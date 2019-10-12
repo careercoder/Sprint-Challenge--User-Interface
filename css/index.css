@@ -201,8 +201,11 @@ section#reasons > div.reason{
   justify-content: center;
   flex-direction: column; /** change to row see what happens **/
 }
-/*** end section ***/
-/** section::details **/
+
+
+.detail div{} /** inner div padding ** no break ** not included in caluclation ** calc fails 
+
+
 section#details{
   min-height: 100%;
   display: flex;
@@ -215,17 +218,39 @@ section#details div.detail{
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: dashed 1px #000;
+
 }
 
-/** broadcast inner div position controls **/
+
 section#details > div.detail{
   display: flex;
-  flex-basis: 42%; /** this makes the space between the colum row |[ ] -space- [ ]| **/
+  flex-basis: 42%; 
   justify-content: center;
-  flex-direction: column; /** change to row see what happens **/
+  flex-direction: column;
+*/
+
+
+/* simplified */
+.detail img{ max-width: 100%; margin: 0 auto; box-shadow: -2px 2px 3px #333; border-radius: 7px; }
+#details .detail div{     padding: 20px;
+    border-bottom: dashed 2px #000; }
+#details{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.detail{
+  width: 49%;
+}
+.detail > div{
+  margin:0 10px 10px 0;
 }
 
-/*** end section ***/
+.detail{  margin-bottom:  20px; }
+
+
+
+
 .detail h3{
     font-weight: bold;
     padding-top: 15px;
