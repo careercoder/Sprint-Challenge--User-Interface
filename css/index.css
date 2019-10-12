@@ -72,6 +72,7 @@ p {
     margin: 0 auto;
     background: #fff;
     padding: 5px 25px; /** add padding to make pretty */
+    overflow: hidden;
 }
 
 .top-content {
@@ -152,7 +153,12 @@ nav#main ul a{
     color: black;
 
 }
+nav#main ul a:hover{
+    text-decoration: underline;
+    color: cadetblue;
+    font-weight: bold;
 
+}
 .splash .img-holder{
     padding: 20px 0;
 }
@@ -340,3 +346,22 @@ footer nav a {
 .form-group{ padding: 10px 0; }
 
 .form-control{ width: 100%; padding: 7px; font-size: 14px; }
+
+
+/** animations strecth **/
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
