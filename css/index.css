@@ -351,7 +351,7 @@ footer nav a {
 /** animations strecth **/
 p {
   animation-duration: 3s;
-  animation-name: slidein;
+  animation-name: bounce;
 }
 
 @keyframes slidein {
