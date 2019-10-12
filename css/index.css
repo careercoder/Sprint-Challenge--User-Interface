@@ -335,3 +335,8 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+.detail-full{ width: 100%; padding: 25px; border-bottom:  solid 2px dashed; }
+.form-group{ padding: 10px 0; }
+
+.form-control{ width: 100%; padding: 7px; font-size: 14px; }
